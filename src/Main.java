@@ -26,9 +26,11 @@ public class Main {
                 }
             }
 
-            if (opcionMenu == 0) {
-                CatsService.fetchCats ();
-            } else {exit(-1);}
+            switch (opcionMenu) {
+                case 0 -> CatsService.fetchCats ();
+                case 1 -> CatsService.showFavouriteCats(Secrets.API_KEY);
+                case 2-> exit(-1);
+            }
         }while(true);
 
     }
