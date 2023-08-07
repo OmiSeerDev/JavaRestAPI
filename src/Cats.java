@@ -1,0 +1,16 @@
+package src;
+
+public class Cats {
+    String id;
+    String url;
+    String apiKey = Secrets.API_KEY;
+    String image;
+
+    public String getId () {
+        return id;
+    }
+
+    public String getUrl () {
+        return url;
+    }
+}
